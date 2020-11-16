@@ -13,7 +13,7 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install
-    ng build --prod
+    ng build --prod -- -op ..\..\dist
   displayName: 'npm install and build'
 
 # Node.js with Angular
@@ -23,7 +23,7 @@ steps:
     azureSubscription: 'Visual Studio Enterprise(0a0dfef5-3633-4c9f-86d0-989dec5df8db)'
     appType: 'webApp'
     WebAppName: 'JuridicoAeronaves'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/dist/'
 # Build a Node.js project that uses Angular.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
