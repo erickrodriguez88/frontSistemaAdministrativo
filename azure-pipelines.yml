@@ -23,7 +23,7 @@ steps:
     azureSubscription: 'Visual Studio Enterprise(0a0dfef5-3633-4c9f-86d0-989dec5df8db)'
     appType: 'webApp'
     WebAppName: 'JuridicoAeronaves'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/dist/'
+    packageForLinux: 'dist/'
 # Build a Node.js project that uses Angular.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
