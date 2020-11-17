@@ -14,6 +14,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.example-card {
+  max-width: 400px;
+}
   
 
   .spacer {

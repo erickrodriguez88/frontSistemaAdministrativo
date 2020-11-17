@@ -1,0 +1,22 @@
+<p>solicitudes-reservado works!</p>
+<mat-card *ngFor="let reserva of reservas" class="example-card">
+    <mat-card-title>{{reserva.creado_Por}}</mat-card-title>
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{reserva.id_Solicitud}}</mat-card-title>
+          <mat-card-subtitle>{{reserva.estado}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+           Fecha Inicio {{reserva.fecha_Inicio}}, Hora Fin {{reserva.hora_Fin}},Hora Inicio{{reserva.hora_Inicio}},
+           Nombre Edificio{{reserva.nombreEdificio}},idDescriptivo{{reserva.id_Descriptivo}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>DETALLES</button>
+          <button mat-button>CANCELAR</button>
+        </mat-card-actions>
+      </mat-card>
+</mat-card>

@@ -7,3 +7,7 @@
   .example-full-width {
     width: 100%;
   }
+
+  mat-grid-tile {
+    background: rgb(63, 63, 63);
+  }

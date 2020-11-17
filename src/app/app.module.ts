@@ -1,16 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon'
-import { MatCardModule} from '@angular/material/card';
-import { MatToolbarModule} from '@angular/material/toolbar';
-import { MatFormFieldModule} from '@angular/material/form-field';
-import { MatInputModule} from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { MenuComponent } from './shared/menu/menu.component';
-
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -18,7 +18,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReservarPuestoComponent } from './reservar-puesto/reservar-puesto.component';
 import { CancelarReservaComponent } from './cancelar-reserva/cancelar-reserva.component';
-
+import { SolicitudesReservadoComponent } from './solicitudes-reservado/solicitudes-reservado.component';
 
 
 @NgModule({
@@ -28,10 +28,12 @@ import { CancelarReservaComponent } from './cancelar-reserva/cancelar-reserva.co
     InicioComponent,
     ReservarPuestoComponent,
     CancelarReservaComponent,
-    MenuComponent
+    MenuComponent,
+    SolicitudesReservadoComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
@@ -39,7 +41,8 @@ import { CancelarReservaComponent } from './cancelar-reserva/cancelar-reserva.co
     MatCardModule,
     MatToolbarModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule
     
   ],
   providers: [],
