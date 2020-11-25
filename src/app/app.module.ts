@@ -9,16 +9,18 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatGridListModule} from '@angular/material/grid-list';
-import { MenuComponent } from './shared/menu/menu.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { AppComponent } from './app.component';
+import { MenuComponent } from './shared/menu/menu.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReservarPuestoComponent } from './reservar-puesto/reservar-puesto.component';
 import { CancelarReservaComponent } from './cancelar-reserva/cancelar-reserva.component';
 import { SolicitudesReservadoComponent } from './solicitudes-reservado/solicitudes-reservado.component';
+import { GenerarQRComponent } from './generar-qr/generar-qr.component';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { SolicitudesReservadoComponent } from './solicitudes-reservado/solicitud
     ReservarPuestoComponent,
     CancelarReservaComponent,
     MenuComponent,
-    SolicitudesReservadoComponent
+    SolicitudesReservadoComponent,
+    GenerarQRComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { SolicitudesReservadoComponent } from './solicitudes-reservado/solicitud
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDatepickerModule
     
   ],
   providers: [],

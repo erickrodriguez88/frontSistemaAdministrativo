@@ -1,17 +1,45 @@
-<app-menu ></app-menu>
+<app-menu></app-menu>
 
 <div class="content" role="main">
-    Reservar Puesto
+  <h1>Reservar Puesto</h1>
     <form class="example-form">
-        <mat-form-field class="example-full-width">
-          <mat-label>Día</mat-label>
-          <input matInput placeholder="22/11/2020" value="">
+      <mat-form-field class="example-full-width">
+        <mat-label>Company (disabled)</mat-label>
+        <input matInput disabled value="Google">
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>First name</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Hora Inicio</mat-label>
+        <textarea matInput placeholder="08:00 am"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Hora Fin </mat-label>
+        <textarea placeholder="5:00 pm" matInput></textarea>
+      </mat-form-field>
+
+    
+          <mat-form-field class="example-full-width">
+          <mat-label>Fecha de Inicio</mat-label>
+          <input matInput placeholder="Ex. San Francisco">
         </mat-form-field>
-      
-        <mat-form-field class="example-full-width">
-          <mat-label>Otro Campo</mat-label>
-          <textarea matInput placeholder="Aca puedes poner otro criteo de busqueda"></textarea>
+      <mat-form-field class="example-full-width">
+          <mat-label>State</mat-label>
+          <input matInput placeholder="Ex. California">
         </mat-form-field>
-      </form>
+        <mat-form-field class="example-full-width">
+          <mat-label>Postal Code</mat-label>
+          <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
+          <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+        </mat-form-field>
+        <button mat-raised-button color="primary" href="/inicio" >Guardar
+          <mat-icon aria-hidden="false" aria-label="Example home icon">save</mat-icon>
+        </button>
+    </form>
 </div>
       

@@ -1,0 +1,11 @@
+
+<app-menu></app-menu>
+<p>generar-qr works!</p>
+<mat-form-field class="example-full-width">
+    <mat-label>Palabra</mat-label>
+    <input matInput value="Google" #text>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="generarQR(text)" >Generar
+    <mat-icon aria-hidden="false" aria-label="Example home icon">qr_code</mat-icon>
+  </button>
+<img id="imag" style="-webkit-user-select: none;margin: auto;" src={{qr}}>
