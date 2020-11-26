@@ -23,7 +23,7 @@ export class EscanearQRComponent implements OnInit {
     }
 };
 
-
+capture(){}
 
   startCamera() {
     if (!!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia)) { 

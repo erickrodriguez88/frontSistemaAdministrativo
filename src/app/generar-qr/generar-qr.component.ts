@@ -19,11 +19,11 @@ export class GenerarQRComponent implements OnInit {
       this.qr = data; 
       console.log(this.qr);
     })*/
-    alert("cargué la pantalla");
+
   }
 
   generarQR(item){ 
-    alert("presione el boton");
+
     console.log(item.value);
     this.qr = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl="+item.value+"&choe=UTF-8"; 
     console.log(this.qr);
