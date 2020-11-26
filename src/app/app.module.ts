@@ -21,6 +21,7 @@ import { ReservarPuestoComponent } from './reservar-puesto/reservar-puesto.compo
 import { CancelarReservaComponent } from './cancelar-reserva/cancelar-reserva.component';
 import { SolicitudesReservadoComponent } from './solicitudes-reservado/solicitudes-reservado.component';
 import { GenerarQRComponent } from './generar-qr/generar-qr.component';
+import { EscanearQRComponent } from './escanear-qr/escanear-qr.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { GenerarQRComponent } from './generar-qr/generar-qr.component';
     CancelarReservaComponent,
     MenuComponent,
     SolicitudesReservadoComponent,
-    GenerarQRComponent
+    GenerarQRComponent,
+    EscanearQRComponent
   ],
   imports: [
     BrowserModule,
