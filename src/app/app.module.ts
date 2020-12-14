@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,6 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './shared/menu/menu.component';
@@ -34,7 +36,8 @@ import { EscanearQRComponent } from './escanear-qr/escanear-qr.component';
     MenuComponent,
     SolicitudesReservadoComponent,
     GenerarQRComponent,
-    EscanearQRComponent
+    EscanearQRComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -48,8 +51,8 @@ import { EscanearQRComponent } from './escanear-qr/escanear-qr.component';
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
-    MatDatepickerModule
-    
+    MatDatepickerModule,
+    ZXingScannerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
