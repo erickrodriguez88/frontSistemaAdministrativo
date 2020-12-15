@@ -1,6 +1,13 @@
 <app-menu ></app-menu>
 
-<zxing-scanner></zxing-scanner>
-
+<zxing-scanner (scanSuccess)="onCodeResult($event)" [formats]="['QR_CODE', 'EAN_13', 'CODE_128', 'DATA_MATRIX']"></zxing-scanner>
 
 <p>escanear-qr works!</p>
+
+<section class="results" >
+   <div>
+     <small>Result</small>
+     <strong>{{ qrResultString }}</strong>
+   </div>
+   <button mat-icon-button (click)="clearResult()">&times;</button>
+ </section>
