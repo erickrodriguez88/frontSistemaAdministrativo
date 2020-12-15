@@ -1,13 +1,15 @@
 <app-menu ></app-menu>
 
-<zxing-scanner (scanSuccess)="onCodeResult($event)" [formats]="['QR_CODE', 'EAN_13', 'CODE_128', 'DATA_MATRIX']"></zxing-scanner>
+<div id="prueba">
+<zxing-scanner (scanSuccess)="onCodeResult($event)" ></zxing-scanner>
+</div>
 
-<p>escanear-qr works!</p>
-
-<section class="results" >
+<div id="prueba2">
+<section class="results" *ngIf="qrResultString">
    <div>
      <small>Result</small>
      <strong>{{ qrResultString }}</strong>
    </div>
    <button mat-icon-button (click)="clearResult()">&times;</button>
  </section>
+</div>

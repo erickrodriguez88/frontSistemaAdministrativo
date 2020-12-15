@@ -5,9 +5,27 @@
 
 :host zxing-scanner::ng-deep  {
     max-height: 20vh;
-    width: 100vw;
-    max-width: 900px ;
-    object-fit: contain;
+    width: 80vw;
+    max-width: 700px ;
+
     margin: auto;
     border: 3px solid rgb(179, 0, 15);
+
+  }
+
+ 
+
+  #prueba{
+    max-height: 20vh;
+    width: 80vw;
+    max-width: 700px ;
+    margin: auto;
+    display:inline-block;
+    border: 3px solid rgb(12, 0, 179);
+  }
+
+  #prueba2{
+    margin: auto;
+    display:inline-block;
+    border: 3px solid rgb(24, 23, 23);
   }
